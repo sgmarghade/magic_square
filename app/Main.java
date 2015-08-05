@@ -8,8 +8,13 @@ import java.util.List;
  * Logic to solve magic square can be found in https://www.math.hmc.edu/funfacts/ffiles/10001.4-8.shtml
  */
 public class Main {
+    /*
+     *  We will create CSV of magic square which can be analysed in any xls viewer.
+      *  Some xls viewer doesnt support big column numbers.
+     */
     String filePath = "/Users/swapnil.marghade/tmp.csv";
-    Integer squareSize = 5001;
+    Integer squareSize = 5001;  // This value must be odd..
+
     public static void main(String [] args){
 
         new Main().run();
